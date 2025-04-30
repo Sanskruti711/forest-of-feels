@@ -13,6 +13,15 @@ import json
 import os
 import hashlib
 
+import streamlit as st
+
+# Load and display image
+st.image("assets/door.gif", width=250)
+
+# Play background music
+audio_file = open('assets/music.mp3', 'rb')
+st.audio(audio_file.read(), format='audio/mp3')
+
 # Helper to hash passwords
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
