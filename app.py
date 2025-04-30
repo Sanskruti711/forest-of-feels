@@ -7,20 +7,12 @@ Original file is located at
     https://colab.research.google.com/drive/11J_Hf2kueUmLyuKk-hQS1F923nCwG5tQ
 """
 
-
+!pip install streamlit
+!pip install streamlit-lottie
 import streamlit as st
 import json
 import os
 import hashlib
-
-import streamlit as st
-
-# Load and display image
-st.image("assets/door.gif", width=250)
-
-# Play background music
-audio_file = open('assets/music.mp3', 'rb')
-st.audio(audio_file.read(), format='audio/mp3')
 
 # Helper to hash passwords
 def hash_password(password):
