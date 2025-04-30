@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/11J_Hf2kueUmLyuKk-hQS1F923nCwG5tQ
 """
 
-!pip install streamlit
-!pip install streamlit-lottie
 import streamlit as st
 import json
 import os
