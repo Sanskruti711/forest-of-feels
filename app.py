@@ -40,15 +40,22 @@ def add_background_music():
 def main():
     st.set_page_config(page_title="THE FOREST OF FEELS", layout="centered")
 
-
     st.title("🌸 Welcome to The Shadow Garden Game 🌸")
     st.markdown("Relax, breathe, and choose your path... 🌿✨")
-    add_background_music()
+
+    # ⬇️ Add your local GIF and background music here
+    with open("assets/door.gif", "rb") as f:
+        st.image(f.read(), width=250)
+
+    with open("assets/bgmusic.mp3", "rb") as audio_file:
+        st.audio(audio_file.read(), format="audio/mp3")
 
     users = load_users()
 
-    # Tabs for Login / Signup
     tab1, tab2 = st.tabs(["🔐 Login", "🌈 Signup"])
+    
+    ...
+
 
     with tab1:
         username = st.text_input("Username")
