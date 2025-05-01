@@ -44,10 +44,10 @@ def main():
     st.markdown("Relax, breathe, and choose your path... 🌿✨")
 
     # ⬇️ Add your local GIF and background music here
-    with open("assets/door.gif", "rb") as f:
+    with open("https://raw.githubusercontent.com/Sanskruti711/assets-/main/door.gif", "rb") as f:
         st.image(f.read(), width=250)
 
-    with open("assets/music.mp3", "rb") as audio_file:
+    with open("https://raw.githubusercontent.com/Sanskruti711/assets-/main/music.mp3", "rb") as audio_file:
         st.audio(audio_file.read(), format="audio/mp3")
 
     users = load_users()
