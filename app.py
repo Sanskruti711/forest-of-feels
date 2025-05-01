@@ -44,8 +44,9 @@ def main():
     st.markdown("Relax, breathe, and choose your path... 🌿✨")
 
     # ⬇️ Add your local GIF and background music here
-    st.image("https://raw.githubusercontent.com/Sanskruti711/forest-of-feels/main/door.gif", width=250)
-    st.audio("https://raw.githubusercontent.com/Sanskruti711/forest-of-feels/main/bgmusic.mp3")
+    st.image("https://raw.githubusercontent.com/Sanskruti711/forest-of-feels/main/door.gif", width=400)
+    st.audio("https://raw.githubusercontent.com/Sanskruti711/forest-of-feels/main/music.mp3")
+
 
 
     users = load_users()
