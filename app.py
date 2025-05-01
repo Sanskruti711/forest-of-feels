@@ -47,7 +47,7 @@ def main():
     with open("assets/door.gif", "rb") as f:
         st.image(f.read(), width=250)
 
-    with open("assets/bgmusic.mp3", "rb") as audio_file:
+    with open("assets/music.mp3", "rb") as audio_file:
         st.audio(audio_file.read(), format="audio/mp3")
 
     users = load_users()
