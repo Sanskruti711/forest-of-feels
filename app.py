@@ -38,9 +38,10 @@ def add_background_music():
 
 # Main app
 def main():
-    st.set_page_config(page_title="The Soothing Game", layout="centered")
+    st.set_page_config(page_title="THE FOREST OF FEELS", layout="centered")
 
-    st.title("🌸 Welcome to The Soothing Game 🌸")
+
+    st.title("🌸 Welcome to The Shadow Garden Game 🌸")
     st.markdown("Relax, breathe, and choose your path... 🌿✨")
     add_background_music()
 
