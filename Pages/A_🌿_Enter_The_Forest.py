@@ -1,4 +1,4 @@
-import streamlit as st
+pip install streamlit==1.35.0
 
 st.set_page_config(page_title="Enter the Forest", layout="centered")
 
