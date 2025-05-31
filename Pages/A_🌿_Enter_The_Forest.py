@@ -35,6 +35,28 @@ emotion = st.radio(
 
 # Button to next page
 if st.button("🌌 Begin Your Path"):
+    import streamlit as st
+
+if 'logged_in' not in st.session_state:
+    st.session_state.logged_in = False
+
+def login():
+    st.title("Login Page")
+    email = st.text_input("Email")
+    password = st.text_input("Password", type="password")
+    if st.button("Login"):
+        if email == "user@example.com" and password == "password123":
+            st.session_state.logged_in = True
+            st.success("Logged in!")
+            st.switch_page("Pages/B_🫧_Your_Story_Begins.py")  # <-- next page
+        else:
+            st.error("Wrong email or password!")
+
+if not st.session_state.logged_in:
+    login()
+else:
+    st.switch_page("Pages/B_🫧_Your_Story_Begins.py")
+
     st.success(f"Ah... '{emotion}' it is. Let’s walk together.")
-    st.markdown("[➡️ Continue Your Journey](./2_🧠_Your_Story_Begins)")
+    st.markdown("[➡️ Continue Your Journey](./B_🧠_Your_Story_Begins)")
 
