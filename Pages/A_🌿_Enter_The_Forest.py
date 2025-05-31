@@ -44,6 +44,7 @@ def login():
     st.title("Login Page")
     email = st.text_input("Email")
     password = st.text_input("Password", type="password")
+    st.switch_page("Pages/B_🫧_Your_Story_Begins.py")
     if st.button("Login"):
         if email == "user@example.com" and password == "password123":
             st.session_state.logged_in = True
