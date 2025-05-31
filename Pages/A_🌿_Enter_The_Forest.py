@@ -35,6 +35,7 @@ emotion = st.radio(
 
 # Button to next page
 if st.button("🌌 Begin Your Path"):
+    st.switch_page("Pages/B_🫧_Your_Story_Begins.py")
     import streamlit as st
 
 if 'logged_in' not in st.session_state:
